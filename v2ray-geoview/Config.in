@@ -1,0 +1,6 @@
+config PACKAGE_geoview
+    tristate "geoview support"  # 使用 tristate 允许编译为模块 (m) 或直接编入 (y)
+    default n                   # 默认不选中，让依赖它的包 (如 luci-app-passwall2) 来决定是否选中它
+    help
+      A handy tool to extract useful information from geo* files.
+      This package contains the geoview binary.
